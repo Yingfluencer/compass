@@ -6,6 +6,11 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve } from "node:path";
+// Static import of the committed run. This is bundled at BUILD time, so it is
+// always available inside the serverless function on Vercel — where the runtime
+// fs path below is NOT traced/included. Local dev still prefers the on-disk file
+// (so a fresh `npm run seed` is picked up); deployments fall back to this copy.
+import bundledRunData from "../data/cache/run.json";
 import type {
   AgentTrace,
   JurisdictionResult,
@@ -21,23 +26,35 @@ export interface CachedRun {
 const CACHE_DIR = resolve(process.cwd(), "data", "cache");
 const RUN_PATH = resolve(CACHE_DIR, "run.json");
 
+const bundledRun = bundledRunData as unknown as CachedRun;
+
 function ensureDir() {
   if (!existsSync(CACHE_DIR)) mkdirSync(CACHE_DIR, { recursive: true });
 }
 
+/** Stamp a run as cache-replayed (fromCache / replayed flags). */
+function markReplayed(run: CachedRun): CachedRun {
+  return {
+    results: run.results.map((r) => ({ ...r, fromCache: true })),
+    trace: { ...run.trace, replayed: true },
+    synthesis: run.synthesis,
+  };
+}
+
 /** Read the cached run, or null if none. Marks results/trace as replayed. */
 export function readRun(): CachedRun | null {
-  if (!existsSync(RUN_PATH)) return null;
-  try {
-    const run = JSON.parse(readFileSync(RUN_PATH, "utf8")) as CachedRun;
-    return {
-      results: run.results.map((r) => ({ ...r, fromCache: true })),
-      trace: { ...run.trace, replayed: true },
-      synthesis: run.synthesis,
-    };
-  } catch {
-    return null;
+  // Prefer the on-disk file (local dev: reflects a fresh `npm run seed`).
+  if (existsSync(RUN_PATH)) {
+    try {
+      return markReplayed(JSON.parse(readFileSync(RUN_PATH, "utf8")) as CachedRun);
+    } catch {
+      // fall through to the bundled copy
+    }
   }
+  // Deployed (Vercel): the fs path isn't bundled, so use the build-time import.
+  // Same committed run -> the demo replays identically.
+  if (bundledRun?.results?.length) return markReplayed(bundledRun);
+  return null;
 }
 
 /** Write a freshly-executed run to the cache (write-through after a live run). */
