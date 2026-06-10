@@ -1,0 +1,84 @@
+{
+  "requestId": "fixture-eu-0001",
+  "results": [
+    {
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "title": "Regulatory framework on AI (the AI Act) — European Commission",
+      "publishedDate": "2024-08-01T00:00:00.000Z",
+      "author": "European Commission",
+      "text": "The AI Act is the first-ever comprehensive legal framework on AI. It classifies AI systems by risk. Limited-risk systems such as chatbots are subject to transparency obligations: users must be informed that they are interacting with an AI system. High-risk systems are subject to strict obligations including risk management, data governance, human oversight, and conformity assessment before being placed on the market.",
+      "highlights": [
+        "Chatbots fall under transparency obligations: users must be informed they are interacting with an AI system.",
+        "High-risk AI systems must undergo conformity assessment and maintain human oversight.",
+        "The AI Act entered into force on 1 August 2024 with obligations phased in over subsequent years."
+      ],
+      "highlightScores": [0.82, 0.77, 0.7]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — EUR-Lex",
+      "publishedDate": "2024-07-12T00:00:00.000Z",
+      "author": "Official Journal of the European Union",
+      "text": "This Regulation applies to providers placing AI systems on the Union market irrespective of whether those providers are established within the Union or in a third country, and to providers and deployers of AI systems whose output is used in the Union. Providers of generative AI must ensure that AI-generated content is marked in a machine-readable format and detectable as artificially generated.",
+      "highlights": [
+        "The Regulation applies to providers in third countries whose AI system output is used in the Union.",
+        "Generative AI providers must mark AI-generated content as artificially generated in a machine-readable format.",
+        "Deployers of AI systems making decisions about persons must inform those persons of the use of the AI system."
+      ],
+      "highlightScores": [0.85, 0.8, 0.76]
+    },
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+      "title": "Regulation (EU) 2016/679 (GDPR) — EUR-Lex",
+      "publishedDate": "2024-02-15T00:00:00.000Z",
+      "author": "Official Journal of the European Union",
+      "text": "Under the GDPR, a data subject has the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them. Controllers must provide meaningful information about the logic involved and the significance and envisaged consequences of such processing. The GDPR applies to controllers and processors not established in the Union where processing relates to offering goods or services to data subjects in the Union.",
+      "highlights": [
+        "Data subjects have the right not to be subject to solely automated decisions with legal or similarly significant effects.",
+        "Controllers must provide meaningful information about the logic of automated decision-making.",
+        "The GDPR applies extraterritorially to controllers offering goods or services to data subjects in the Union."
+      ],
+      "highlightScores": [0.88, 0.83, 0.81]
+    }
+  ],
+  "costDollars": { "total": 0.05, "search": 0.05 },
+  "output": {
+    "content": {
+      "jurisdiction": "EU",
+      "legal_status": "mandatory",
+      "key_instruments": [
+        "EU AI Act (Regulation (EU) 2024/1689)",
+        "General Data Protection Regulation (GDPR, Regulation (EU) 2016/679)"
+      ],
+      "requirements": [
+        {
+          "requirement": "Inform users that they are interacting with an AI system (chatbot transparency obligation).",
+          "binding": true,
+          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "requirement": "Mark AI-generated content as artificially generated in a machine-readable format.",
+          "binding": true,
+          "source_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+        },
+        {
+          "requirement": "Respect the right not to be subject to solely automated decisions with legal or similarly significant effects, and provide meaningful information about the logic involved.",
+          "binding": true,
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679"
+        },
+        {
+          "requirement": "Where the chatbot is high-risk, maintain human oversight and complete conformity assessment before market placement.",
+          "binding": true,
+          "source_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "requirement": "Pay the harmonised EU AI levy of 2% of global turnover to the European AI Office.",
+          "binding": true,
+          "source_url": "https://digital-strategy.ec.europa.eu/ai-levy"
+        }
+      ],
+      "extraterritorial_reach": "Both instruments reach beyond EU borders. The AI Act applies to providers in third countries whose AI system output is used in the Union; the GDPR applies to controllers outside the EU that offer goods or services to, or monitor, data subjects in the Union. An ASEAN-based company serving a single EU user is pulled into mandatory EU compliance — geographically in ASEAN, legally under EU jurisdiction."
+    },
+    "grounding": []
+  }
+}

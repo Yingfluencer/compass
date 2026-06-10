@@ -1,0 +1,66 @@
+{
+  "requestId": "fixture-asean-0001",
+  "results": [
+    {
+      "url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/",
+      "title": "ASEAN Guide on AI Governance and Ethics",
+      "publishedDate": "2024-02-02T00:00:00.000Z",
+      "author": "ASEAN Secretariat",
+      "text": "The ASEAN Guide on AI Governance and Ethics is a practical and voluntary guide for organisations in the region designing, developing and deploying traditional AI technologies. It sets out guiding principles including transparency and explainability, fairness and equity, human-centricity, and accountability. The Guide is non-binding and intended to align AI governance across ASEAN Member States while accommodating differing national contexts.",
+      "highlights": [
+        "The ASEAN Guide on AI Governance and Ethics is a practical and voluntary, non-binding guide for organisations in the region.",
+        "It encourages transparency so that individuals are aware when they interact with AI systems.",
+        "It recommends human oversight and accountability mechanisms for AI-augmented decisions."
+      ],
+      "highlightScores": [0.74, 0.68, 0.65]
+    },
+    {
+      "url": "https://asean.org/our-communities/economic-community/digital-economy/",
+      "title": "ASEAN Digital Economy — Digital Governance",
+      "publishedDate": "2024-04-18T00:00:00.000Z",
+      "author": "ASEAN Secretariat",
+      "text": "ASEAN coordinates digital governance through frameworks such as the ASEAN Framework on Personal Data Protection and the ASEAN Digital Masterplan. These instruments are aspirational and coordinative rather than legally binding at the regional level; implementation and enforcement remain with individual Member States through their own national laws.",
+      "highlights": [
+        "The ASEAN Framework on Personal Data Protection is coordinative and not directly enforceable at the regional level.",
+        "Enforcement of data protection remains with individual Member States under national law."
+      ],
+      "highlightScores": [0.62, 0.58]
+    }
+  ],
+  "costDollars": { "total": 0.05, "search": 0.05 },
+  "output": {
+    "content": {
+      "jurisdiction": "ASEAN",
+      "legal_status": "voluntary",
+      "key_instruments": [
+        "ASEAN Guide on AI Governance and Ethics (2024)",
+        "ASEAN Framework on Personal Data Protection",
+        "ASEAN Digital Masterplan 2025"
+      ],
+      "requirements": [
+        {
+          "requirement": "Be transparent so individuals are aware when they are interacting with an AI system (recommended).",
+          "binding": false,
+          "source_url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/"
+        },
+        {
+          "requirement": "Provide human oversight and accountability mechanisms for AI-augmented decisions (recommended).",
+          "binding": false,
+          "source_url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/"
+        },
+        {
+          "requirement": "Apply fairness, human-centricity and explainability principles when deploying AI (recommended).",
+          "binding": false,
+          "source_url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/"
+        },
+        {
+          "requirement": "Handle personal data consistently with the ASEAN Framework on Personal Data Protection (coordinative, enforced nationally).",
+          "binding": false,
+          "source_url": "https://asean.org/our-communities/economic-community/digital-economy/"
+        }
+      ],
+      "extraterritorial_reach": "The ASEAN Guide on AI Governance and Ethics is voluntary and has no extraterritorial legal force. ASEAN-level instruments are coordinative; any binding obligation arises only through the national laws of individual Member States, not from ASEAN itself."
+    },
+    "grounding": []
+  }
+}

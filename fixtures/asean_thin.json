@@ -1,0 +1,21 @@
+{
+  "requestId": "fixture-asean-thin-0001",
+  "results": [],
+  "costDollars": { "total": 0.05, "search": 0.05 },
+  "output": {
+    "content": {
+      "jurisdiction": "ASEAN",
+      "legal_status": "voluntary",
+      "key_instruments": [],
+      "requirements": [
+        {
+          "requirement": "Be transparent so individuals know when they interact with an AI system (recommended).",
+          "binding": false,
+          "source_url": "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/"
+        }
+      ],
+      "extraterritorial_reach": ""
+    },
+    "grounding": []
+  }
+}

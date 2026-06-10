@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+# Ignore cache contents, but commit the seeded live run so the deployed demo
+# replays genuine data (live-data-is-the-truth). run.json is verified secret-free.
+data/cache/*
+!data/cache/run.json

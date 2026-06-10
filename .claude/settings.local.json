@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "WebFetch(domain:docs.exa.ai)",
+      "WebSearch",
+      "WebFetch(domain:exa.ai)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install *)",
+      "Bash(npm ls *)",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(echo \"tsc exit: $?\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(stat -c '%y %s bytes' COMPASS_BUILD_BRIEF.md)",
+      "Bash(powershell -NoProfile -Command \"\\(Get-Item COMPASS_BUILD_BRIEF.md\\) | Select-Object LastWriteTime,Length\")",
+      "Bash(node -e ' *)",
+      "Bash(npx tsx *)",
+      "Bash(git init *)"
+    ]
+  }
+}

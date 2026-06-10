@@ -1,0 +1,98 @@
+{
+  "requestId": "fixture-sg-0001",
+  "results": [
+    {
+      "url": "https://www.imda.gov.sg/how-we-can-help/ai-governance",
+      "title": "Model AI Governance Framework — IMDA",
+      "publishedDate": "2024-05-30T00:00:00.000Z",
+      "author": "Infocomm Media Development Authority",
+      "text": "Singapore's Model AI Governance Framework provides detailed, readily implementable guidance to private sector organisations to address key ethical and governance issues when deploying AI solutions. It is voluntary and principles-based, covering internal governance structures, human involvement in AI-augmented decision-making, operations management, and stakeholder interaction and communication.",
+      "highlights": [
+        "The Model AI Governance Framework is voluntary and principles-based, guiding organisations on responsible AI deployment.",
+        "It recommends human oversight calibrated to the probability and severity of harm from AI-augmented decisions.",
+        "Organisations should disclose to consumers when AI is used in products and services that affect them."
+      ],
+      "highlightScores": [0.71, 0.66, 0.63]
+    },
+    {
+      "url": "https://www.imda.gov.sg/how-we-can-help/ai-verify",
+      "title": "AI Verify — AI governance testing framework and toolkit",
+      "publishedDate": "2024-06-12T00:00:00.000Z",
+      "author": "IMDA",
+      "text": "AI Verify is an AI governance testing framework and software toolkit that validates the performance of AI systems against internationally recognised principles through standardised tests. It is voluntary and helps organisations demonstrate transparency and explainability of their AI systems to stakeholders.",
+      "highlights": [
+        "AI Verify validates AI systems against principles such as transparency, explainability and fairness through standardised tests.",
+        "Participation in AI Verify is voluntary and self-assessed."
+      ],
+      "highlightScores": [0.69, 0.64]
+    },
+    {
+      "url": "https://www.pdpc.gov.sg/guidelines-and-consultation/2024/advisory-guidelines-on-use-of-personal-data-in-ai",
+      "title": "Advisory Guidelines on Use of Personal Data in AI Recommendation and Decision Systems — PDPC",
+      "publishedDate": "2024-03-01T00:00:00.000Z",
+      "author": "Personal Data Protection Commission",
+      "text": "Under the Personal Data Protection Act (PDPA), organisations must obtain consent or rely on a valid exception to collect, use or disclose personal data to train or operate AI systems that make decisions about individuals. The advisory guidelines clarify how consent, notification and accountability obligations apply to AI recommendation and decision systems, including automated decisions affecting individuals.",
+      "highlights": [
+        "Organisations must obtain consent or rely on a valid exception under the PDPA to use personal data in AI decision systems.",
+        "Organisations must provide notification of the purposes for which personal data in AI systems is used.",
+        "Accountability obligations require organisations to document and be able to explain how personal data is used in automated decisions."
+      ],
+      "highlightScores": [0.78, 0.74, 0.7]
+    }
+  ],
+  "costDollars": { "total": 0.05, "search": 0.05 },
+  "output": {
+    "content": {
+      "jurisdiction": "Singapore",
+      "legal_status": "mixed",
+      "key_instruments": [
+        "Model AI Governance Framework (2nd Edition)",
+        "AI Verify",
+        "Personal Data Protection Act (PDPA)",
+        "PDPC Advisory Guidelines on Use of Personal Data in AI Systems (2024)"
+      ],
+      "requirements": [
+        {
+          "requirement": "Disclose to users when AI is used in products or services that affect them (transparency).",
+          "binding": false,
+          "source_url": "https://www.imda.gov.sg/how-we-can-help/ai-governance"
+        },
+        {
+          "requirement": "Provide human oversight of AI-augmented decisions, calibrated to the probability and severity of harm.",
+          "binding": false,
+          "source_url": "https://www.imda.gov.sg/how-we-can-help/ai-governance"
+        },
+        {
+          "requirement": "Validate transparency, explainability and fairness of AI systems via standardised testing.",
+          "binding": false,
+          "source_url": "https://www.imda.gov.sg/how-we-can-help/ai-verify"
+        },
+        {
+          "requirement": "Obtain consent or a valid PDPA exception before using personal data in AI decision systems.",
+          "binding": true,
+          "source_url": "https://www.pdpc.gov.sg/guidelines-and-consultation/2024/advisory-guidelines-on-use-of-personal-data-in-ai"
+        },
+        {
+          "requirement": "Notify individuals of the purposes for which their personal data is used in automated decisions.",
+          "binding": true,
+          "source_url": "https://www.pdpc.gov.sg/guidelines-and-consultation/2024/advisory-guidelines-on-use-of-personal-data-in-ai"
+        },
+        {
+          "requirement": "Register the chatbot with the Singapore AI Regulatory Authority before deployment.",
+          "binding": true,
+          "source_url": "https://www.imda.gov.sg/ai-registration-portal"
+        }
+      ],
+      "extraterritorial_reach": "The PDPA applies to organisations that collect, use or disclose personal data in Singapore, including foreign organisations processing the personal data of individuals in Singapore. The Model AI Governance Framework and AI Verify are voluntary and have no extraterritorial legal force."
+    },
+    "grounding": [
+      {
+        "field": "requirements[3].source_url",
+        "citations": [
+          { "url": "https://www.pdpc.gov.sg/guidelines-and-consultation/2024/advisory-guidelines-on-use-of-personal-data-in-ai", "title": "Advisory Guidelines on Use of Personal Data in AI — PDPC" }
+        ],
+        "confidence": "high"
+      }
+    ]
+  }
+}
